@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Marinara</title>
+    <link rel="stylesheet" th:href="@{/bootstrap.css}">
+</head>
+<body class="text-center">
+<div class="text-center" th:insert="fragments/_header :: header"></div>
+
+    <div class="bg-info border border-dark container-fluid text-center mt-2 p-2 bg-secondary col-8">
+         <h2 class="font-weight-bolder">Equipment List</h2>
+        <nav class="nav text-center">
+            <a class="col-5 nav-pills bg-dark p-2 ml-auto border border-dark font-weight-bold" th:href="@{/}">&lt&ltStart Over</a>
+            <a class="col-5 nav-pills bg-dark p-2 mr-auto border border-dark font-weight-bold" th:href="@{/stepOne}">Next Step&gt&gt</a>
+        </nav><hr>
+
+         <p>For major equipment, all you need is a good quality heat source.  A stovetop range is suitable as
+            long as it has good temperature control on it.  Additional equipment (Figure 1.): An eight quart
+            stock pot, a cutting board, a quality chef’s knife, a clean towel (this could get messy), a pound scale,
+            a wooden spoon, measuring cups, tongs, a large bowl, a food mill, and a six quart pot.  With the stock pot,
+            make sure that the bottom is at least 3/16th inches thick to help prevent scorching.  This procedure uses a
+            food mill, but a food processor will work as well.  Keep in mind that a food mill will remove the tomato
+            seeds which will help keep your sauce from getting bitter. </p>
+
+
+
+    </div>
+    <img class="text-center m-5" th:src="@{/img/equipment.jpeg}" height="600px">
+    <div class="text-sm-center p-5" th:insert="fragments/_footer :: footer"></div>
+
+</body>
+</html>

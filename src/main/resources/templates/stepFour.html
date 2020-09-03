@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Marinara</title>
+    <link rel="stylesheet" th:href="@{/bootstrap.css}">
+</head>
+<body class="text-center">
+<div class="text-center" th:insert="fragments/_header :: header"></div>
+
+<div class="bg-info border border-dark container-fluid text-center mt-2 p-2 bg-secondary col-8">
+    <h2 class="font-weight-bolder">Do Your Finishing Move!</h2>
+    <nav class="nav text-center">
+        <a class="col-5 nav-pills bg-dark p-2 ml-auto border border-dark font-weight-bold" th:href="@{/stepThree}">&lt&ltPrevious Step</a>
+        <a class="col-5 nav-pills bg-dark p-2 mr-auto border border-dark font-weight-bold" th:href="@{/}">Start Over</a>
+    </nav><hr>
+    <div class="row">
+        <div class="col-7">
+            <p>Now that all of the sauce has been passed through the food mill, return it to the stove for the final step.
+                On a clean cutting board take fifteen to twenty basil leaves and cut them chiffonade (Figure 2). At this point,
+                taste the sauce and add salt to your liking. Stir the sauce well and serve over your favorite pasta immediately.
+                If you are not planning on using the sauce right away, do not cut or add the basil.  This can be done at the t
+                ime of service once the sauce is reheated.<br><br>
+                Now that you have an understanding of how a traditional Italian marinara sauce is made, you can use your own
+                imagination to modify it to your liking.  Some people like their sauce heavy on the garlic.  I like to add a
+                handful of grated parmesan cheese right at the end.  Maybe using sun-dried tomatoes would be a good thing. Who
+                knows? The possibilities are nearly endless. Whatever experiments you try, just remember that there is no wrong
+                way as long as you like the results.  </p>
+        </div>
+        <div class="col-3">
+            <img class="text-center mt-5" th:src="@{/img/basil.jpg}" height="240px">
+
+        </div>
+    </div>
+
+</div>
+<div class="text-sm-center p-5" th:insert="fragments/_footer :: footer"></div>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Marinara</title>
+    <link rel="stylesheet" th:href="@{/bootstrap.css}">
+</head>
+<body class="text-center">
+<div class="text-center" th:insert="fragments/_header :: header"></div>
+<div class="bg-info border border-dark container-fluid text-center mt-2 p-2 bg-secondary col-8">
+    <h2 class="font-weight-bolder">Gather Your Ingredients</h2>
+    <nav class="nav text-center">
+        <a class="col-5 nav-pills bg-dark p-2 ml-auto border border-dark font-weight-bold" th:href="@{/equipment}">&lt&ltPrevious Step</a>
+        <a class="col-5 nav-pills bg-dark p-2 mr-auto border border-dark font-weight-bold" th:href="@{/stepTwo}">Next Step&gt&gt</a>
+    </nav><hr>
+    <div class="row">
+        <div class="col-9">
+        <p>Next, we need to gather all of our ingredients.  While all of these ingredients are readily available at your
+            local supermarket, it is always best to pick the produce from your own garden in the late fall when the flavor
+            is best.  The main ingredient in marinara is tomatoes.  Fresh is best, although you can sometimes find good
+            canned San Marzano tomatoes in specialty food stores. Roma tomatoes work well also because of their flavor and
+            their moisture content. If Roma tomatoes are used, they should be fresh, not canned.  Other types of tomatoes
+            will work, but will not produce superior results. One of the things that can make or break your sauce is the
+            quality of basil that you are using.  First, don’t ever use dried basil. Freshly picked is the best option.  If
+            you need to use pre picked, make sure the leaves you are using don’t have any dark spots on them. This will make
+            your sauce bitter.<br><br>
+            For one of the early steps, you will be creating a soffrito, which is a mixture of onions and garlic.  Make sure
+            that you are using sweet Vidalia onions as the higher sugar content will help when it comes time to caramelize
+            the onions. Most types of fresh garlic will work for this sauce as long as it is fresh and has the ends where it
+            connects to the base removed.  Do not use jarred or powdered garlic under any circumstances.  The flavor will
+            become dulled and bitter if you do.  You will need a good quality extra virgin olive oil.  If price is an issue
+            and you need to purchase a lesser quality, that will be ok.  With the amount that is used, it won’t affect the
+            sauce significantly.<br><br>
+            The last ingredient we need to source is red wine.  Most red wines will work as long is they are not a fortified
+            wine, like port wine.  Any quality of cabernet sauvignon will work well.  Quality of the wine is not as
+            important here because most of it will be cooked out anyway.  Just make sure that you find a wine that you will
+            enjoy drinking because there will be leftovers after you open the bottle. </p>
+        </div>
+        <div class="col-3>">
+            <img class="text-center mr-2 mt-5" th:src="@{/img/ingredients.jpg}" height="300px">
+        </div>
+    </div>
+</div>
+
+<div class="text-sm-center p-5" th:insert="fragments/_footer :: footer"></div>
+
+</body>
+</html>

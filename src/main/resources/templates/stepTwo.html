@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Marinara</title>
+    <link rel="stylesheet" th:href="@{/bootstrap.css}">
+</head>
+<body class="text-center">
+<div class="text-center" th:insert="fragments/_header :: header"></div>
+<div class="bg-info border border-dark container-fluid text-center mt-2 p-2 bg-secondary col-8">
+    <h2 class="font-weight-bolder">Prep Your Tomatoes</h2>
+    <nav class="nav text-center">
+        <a class="col-5 nav-pills bg-dark p-2 ml-auto border border-dark font-weight-bold" th:href="@{/stepOne}">&lt&ltPrevious Step</a>
+        <a class="col-5 nav-pills bg-dark p-2 mr-auto border border-dark font-weight-bold" th:href="@{/stepThree}">Next Step&gt&gt</a>
+    </nav><hr>
+    <div class="row">
+        <div class="col-8">
+            <p>Now that we have our ingredients put together, we can start turning them into something that you will be proud to
+                serve for your next meal. The first thing we need to do is remove the skins off your tomatoes.  If you are using
+                canned tomatoes, skip this first step.  To skin our tomatoes, bring four quarts of water to a boil in your large
+                stock pot.  While this is coming to a boil, gather five and a half pounds of tomatoes.  With the tip of a sharp
+                knife, cut an “X” pattern just through the skin on bottom end opposite of the stem.  This will help later.  We
+                will also need to create an ice bath to cool the tomatoes once they come out of the boiling water.  Use the
+                large bowl and fill it with ice and water.  Just remember that you will be adding the tomatoes to it, so make
+                sure it is not too full.  Once the water in the pot has come to a boil, add two or three tomatoes to the water.
+                If we add them all at once, the water will cool down too much and the skins won’t come off properly.  After the
+                tomatoes have boiled for 20 seconds, check one to see if the skin peels away from the meat easily starting from
+                the “X” that you had cut in them earlier.  If so, place them immediately in the ice water bath.  Repeat this
+                process until all of the tomatoes are cooked.  Once all the tomatoes have chilled, peel all of the skins off and
+                discard the skins.  After all the tomatoes have been peeled, take them to the cutting board and cut them into
+                quarters.  The shape doesn’t matter much as long as all the pieces are approximately the same size.  Empty the
+                ice bath bowl and use it to store the cut tomatoes until needed again.  Collect any juices created by cutting
+                the tomatoes and put into the bowl as well.  Take the stock pot and wash it right away because we will need it
+                for the next step.   </p>
+        </div>
+        <div class="col-3">
+            <img class="text-center mt-3" th:src="@{/img/crossTomato.jpeg}" height="225px">
+            <img class="text-center mt-1" th:src="@{/img/iceBath.jpeg}" height="150px">
+            <img class="text-center mt-1" th:src="@{/img/tomatoes.jpeg}" height="150px">
+
+        </div>
+    </div>
+
+</div>
+<div class="text-sm-center p-5" th:insert="fragments/_footer :: footer"></div>
+
+</body>
+</html>

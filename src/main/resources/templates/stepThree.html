@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Marinara</title>
+    <link rel="stylesheet" th:href="@{/bootstrap.css}">
+</head>
+<body class="text-center">
+<div class="text-center" th:insert="fragments/_header :: header"></div>
+<div class="bg-info border border-dark container-fluid text-center mt-2 p-2 bg-secondary col-8">
+    <h2 class="font-weight-bolder">The First Cooking</h2>
+    <nav class="nav text-center">
+        <a class="col-5 nav-pills bg-dark p-2 ml-auto border border-dark font-weight-bold" th:href="@{/stepTwo}">&lt&ltPrevious Step</a>
+        <a class="col-5 nav-pills bg-dark p-2 mr-auto border border-dark font-weight-bold" th:href="@{/stepFour}">Next Step&gt&gt</a>
+    </nav><hr>
+    <div class="row">
+        <div class="col-7">
+            <p>For the next step, we will be creating a soffritto.  This is a classic base in Italian and Spanish cooking.
+                First, take your Vidalia onion and fine dice it.  One whole onion should give you about one cup of onions.
+                Make sure you do not use any of the root area.  Next, mince six cloves of garlic, or enough to give you five
+                tablespoons. In the stock pot, heat a third cup of extra virgin olive oil over medium-low heat.  Add your diced
+                onion.  Stir the onions almost the entire time.  Make sure your heat is not so hot that the onions are browning.
+                Once the onions begin to become translucent, add the minced garlic.  We want to make sure that neither the
+                onions or garlic burn.  At this point, a light brown color is good, but if it turns black, you will have to
+                start over as this will ruin the sauce.  That is a basic soffritto.<br><br>
+                Once a light brown color has been achieved, stir in one cup of the red wine.  Let this mixture cook until the
+                wine has been reduced in volume by about two thirds.  When the wine has reduced enough, add all of the tomatoes
+                and juices.  Cook this over low heat for about two hours.  Make sure you are stirring every 10 to 15 minutes.
+                When stirring, get everything up from off the bottom of the pan.  If it is starting to burn, turn your heat down.
+                If at any point, the sauce seems too thick, you may add a little water to thin it back out.  Once the tomatoes
+                have cooked down, process the sauce in small batches in your food mill.  If you are using a food processor for
+                this step, make sure that you do not over fill the bowl as it might cause an explosion of sauce.   </p>
+        </div>
+        <div class="col-3">
+            <img class="text-center mt-5" th:src="@{/img/simmer.jpeg}" height="200px">
+            <img class="text-center mt-5" th:src="@{/img/mill.jpeg}" height="225px">
+
+        </div>
+    </div>
+
+</div>
+<div class="text-sm-center p-5" th:insert="fragments/_footer :: footer"></div>
+
+</body>
+</html>

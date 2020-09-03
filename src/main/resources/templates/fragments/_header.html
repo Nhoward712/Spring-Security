@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Marinara</title>
+    <link rel="stylesheet" th:href="@{/bootstrap.css}">
+</head>
+<body>
+    <header th:fragment="header">
+        <div class="container-fluid text-center border border-dark p-2 bg-primary col-8">
+
+            <a th:href="@{/}">
+                <div class="row">
+                    <div class="col-3">
+                        <img class="text-center mt-5 rounded-circle" th:src="@{/img/roma.jpeg}" height="100px">
+                    </div>
+                    <div class="col-6">
+                        <h1 class="text-warning font-weight-bold mt-5 mb-3">Worlds Best Marinara</h1>
+                    </div>
+                    <div class="col-3">
+                        <img class="text-center mt-5 rounded-circle" th:src="@{/img/roma.jpeg}" height="100px">
+                    </div>
+                </div>
+            </a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary p-2 border-bottom ">
+            <div class="container">
+<!--                <a class="navbar-brand border border-dark p-1" href="index.html">To Make A Marinara</a>-->
+
+                <button class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse col-10" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto text-center">
+
+                        <li class="nav-item //active">
+                            <a class="nav-link text-white " th:href="@{/}">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" th:href="@{/equipment}">Equipment Needed</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" th:href="@{/stepOne}">Ingredients Needed</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" th:href="@{/stepTwo}">Tomato Prep</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" th:href="@{/stepThree}">Simmer The Tomatoes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" th:href="@{/stepFour}">Finish It Off</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+        </div>
+    </header>
+
+</body>
+</html>

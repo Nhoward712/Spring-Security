@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Marinara</title>
+    <link rel="stylesheet" th:href="@{/bootstrap.css}">
+</head>
+<body class="text-center">
+
+<div class="text-center" th:insert="fragments/_header :: header"></div>
+<div class="bg-info border border-dark container-fluid text-center mt-2 p-2 bg-secondary col-8">
+    <h2 class="font-weight-bolder">To give credit where credit is due</h2><hr>
+    <h4>All text is original</h4>
+    <h4>Images taken from:</h4>
+    <ul>
+        <li>Culicurious.com</li>
+        <li>Epicurious.com</li>
+        <li>RareSeeds.com</li>
+        <li>Simple-Veganista.com</li>
+        <li>ChefsPencil.com</li>
+        <li>TheGourmandMom.com</li>
+        <li>JessicaGavin.com</li>
+        <li>SeriousEats.com</li>
+
+    </ul>
+
+
+</div>
+
+
+
+<div class="text-sm-center p-5" th:insert="fragments/_footer :: footer"></div>
+</body>
+</html>
