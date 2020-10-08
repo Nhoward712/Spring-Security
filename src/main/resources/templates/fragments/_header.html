@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://thymeleaf.org">
+<html lang="en" xmlns:th="http://thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Marinara</title>
@@ -12,13 +12,13 @@
             <a th:href="@{/}">
                 <div class="row">
                     <div class="col-3">
-                        <img class="text-center mt-5 rounded-circle" th:src="@{/img/roma.jpeg}" height="100px">
+                        <img class="text-center mt-5 rounded-circle" th:src="@{/img/fried.jpg}" height="100px">
                     </div>
                     <div class="col-6">
-                        <h1 class="text-warning font-weight-bold mt-5 mb-3">Worlds Best Marinara</h1>
+                        <h1 class="text-warning font-weight-bold mt-5 mb-3">Wisconsin Fried Chicken</h1>
                     </div>
                     <div class="col-3">
-                        <img class="text-center mt-5 rounded-circle" th:src="@{/img/roma.jpeg}" height="100px">
+                        <img class="text-center mt-5 rounded-circle" th:src="@{/img/chicken.jpg}" height="100px">
                     </div>
                 </div>
             </a>
@@ -38,27 +38,28 @@
 
                 <div class="collapse navbar-collapse col-10" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto text-center">
+                        <li>
+                            <form th:action="@{/logout}" method="post">
+                                <input type="submit" value="Log Out">
+                            </form>
+                        </li>
 
                         <li class="nav-item //active">
                             <a class="nav-link text-white " th:href="@{/}">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" th:href="@{/equipment}">Equipment Needed</a>
+                            <a class="nav-link text-white" th:href="@{/benefits}">Benefits</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" th:href="@{/stepOne}">Ingredients Needed</a>
+                            <a class="nav-link text-white" th:href="@{/marinara}">Marinara</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" th:href="@{/stepTwo}">Tomato Prep</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" th:href="@{/stepThree}">Simmer The Tomatoes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" th:href="@{/stepFour}">Finish It Off</a>
-                        </li>
+                        <div sec:authorize="hasAuthority('major')">
+                        <li>
+                            <a class="nav-link text-white" th:href="@{/chicken}">Fried Chicken</a>
+                        </li></div>
 
                     </ul>
+
                 </div>
             </div>
 

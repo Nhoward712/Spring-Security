@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Marinara</title>
+    <link rel="stylesheet" th:href="@{/bootstrap.css}">
+</head>
+<body class="text-center">
+<!--Only -->
+<div class="text-center" th:insert="fragments/_header :: header"></div>
+<div class="bg-info border border-dark container-fluid text-center mt-2 p-2 bg-secondary col-8">
+    <h2>General Sanders Fried Chicken Recipe. (TOP SECRET)</h2><br>
+    <ul>
+        <li> 2 cups buttermilk</li>
+        <li> 2 cups flour</li>
+        <li> 2 tbsp salt</li>
+        <li> 2 tbsp pepper</li>
+        <li> 2 tbsp paprika</li>
+        <li> 1 tbsp garlic powder</li>
+        <li> 1 tbsp basil</li>
+        <li> 1 tbsp oregano</li>
+        <li> 1 tbsp ground ginger</li>
+        <li> 1 tbsp nutmeg</li>
+    </ul>
+</div>
+
+
+
+<div class="text-sm-center p-5" th:insert="fragments/_footer :: footer"></div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Marinara</title>
+    <link rel="stylesheet" th:href="@{/bootstrap.css}">
+</head>
+<body class="text-center">
+<!--any authenticated user can get here-->
+<div class="text-center" th:insert="fragments/_header :: header"></div>
+<div class="bg-info border border-dark container-fluid text-center mt-2 p-2 bg-secondary col-8">
+<h2>Benifits for all WFC employees</h2>
+    <ul>
+        <li>One 1/2 price meal a week</li>
+        <li>Free water - Limit 2 qts a day, must have own container</li>
+        <li>We pay time and a half for all approved overtime</li>
+        <li>Two 15 minute breaks every day</li>
+        <li>Smell like chicken all the time!</li>
+        <li>Pay starts at $7.50/ hour and you will automatically receive a $.15/ hour raise every year regardless of your ability</li>
+    </ul>
+</div>
+
+
+
+<div class="text-sm-center p-5" th:insert="fragments/_footer :: footer"></div>
+</body>
+</html>
