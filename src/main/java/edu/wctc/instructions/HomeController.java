@@ -36,6 +36,5 @@ public class HomeController {
     public String getBenefits(){ return "benefits";}
     @RequestMapping("/login")
     public String getLogin(){ return "login";}
-//    @RequestMapping("/error")
 //    public String getError(){ return "error";}
 }
